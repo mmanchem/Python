@@ -1,0 +1,23 @@
+Sn =[]
+Sn.append(1)
+Sn.append(1)
+x=3
+n=10**9
+#print 'a (1)', '=',Sn[0]
+#print 'a (2)', '=', Sn[1]
+while (x<=n):
+	f1=x/2
+	#print f1
+	f2=x-f1
+	#print f2
+	i=f1-1
+	j=f2-1
+	#print 'i ,j',i,j
+	Sx=Sn[i]+Sn[j]
+	#print 'Sx=','Sn[',i,']','+','Sn[',j,']'
+	Sn.append(Sx)
+	#print 'a (',x,')','=',Sx
+	#print '--------------'
+	x=x+1
+print 'Sum of series when n is ',n,'=>',Sn,'=',sum(Sn)
+print 'Mod Value for S(N) =',n,'', 'is', sum(Sn)%(10**9)
